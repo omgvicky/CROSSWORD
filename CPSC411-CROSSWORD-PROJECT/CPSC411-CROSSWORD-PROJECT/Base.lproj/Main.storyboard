@@ -38,7 +38,7 @@
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VUl-C9-2Ae" userLabel="acrossTextView">
                                 <rect key="frame" x="217" y="692.5" width="197" height="158.5"/>
-                                <string key="text">1. Create a whole town with gibberish talking animals. Animal ________
+                                <string key="text">1. Create a whole town with gibberish talking animals.       Animal ________
  
 2. Creatures that you catch and train to battle others.
  
