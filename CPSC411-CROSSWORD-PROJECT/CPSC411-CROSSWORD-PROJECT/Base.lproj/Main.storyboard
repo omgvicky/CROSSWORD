@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,15 +15,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luv u" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAn-dD-XBR">
-                                <rect key="frame" x="85" y="141" width="288" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOWN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPj-cU-vSN">
+                                <rect key="frame" x="20" y="633" width="122" height="44.5"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="40"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bvy-uR-hXt" userLabel="downTextView">
+                                <rect key="frame" x="4" y="692.5" width="185" height="159"/>
+                                <string key="text">1. Elf boy adventuring into dungeons saving a magic princess. Legend of ____
+ 
+2. Hungry ball getting chased by ghosts.
+ 
+3. Demon slayer. 
+ 
+4. Too many chefs in the kitchen trying to save the Onion Kingdom 
+ 
+5. Mario in space.                 Super Mario ______. </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="9"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VUl-C9-2Ae" userLabel="acrossTextView">
+                                <rect key="frame" x="217" y="692.5" width="197" height="158.5"/>
+                                <string key="text">1. Create a whole town with gibberish talking animals. Animal ________
+ 
+2. Creatures that you catch and train to battle others.
+ 
+3. A digger who blows up monsters with air
+ 
+4. Hedgehog that collects rings and runs at the speed of light
+ 
+5. Pink puff ball that devours everything</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="9"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="jpi-Is-WUN">
+                                <rect key="frame" x="101" y="6" width="213" height="114"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACROSS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEl-KW-rhl">
+                                <rect key="frame" x="234" y="633" width="162.5" height="44.5"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="40"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.89229106903076172" green="0.9538610577583313" blue="0.97384792566299438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QPj-cU-vSN" secondAttribute="trailing" constant="272" id="CcI-wD-FRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VUl-C9-2Ae" secondAttribute="bottom" constant="11" id="EGL-vz-rYH"/>
+                            <constraint firstItem="DEl-KW-rhl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="589" id="QSK-t4-cLL"/>
+                            <constraint firstItem="VUl-C9-2Ae" firstAttribute="leading" secondItem="bvy-uR-hXt" secondAttribute="trailing" constant="28" id="RFh-Gy-ize"/>
+                            <constraint firstItem="VUl-C9-2Ae" firstAttribute="top" secondItem="DEl-KW-rhl" secondAttribute="bottom" constant="15" id="XII-Ml-1Ve"/>
+                            <constraint firstItem="bvy-uR-hXt" firstAttribute="top" secondItem="QPj-cU-vSN" secondAttribute="bottom" constant="15" id="Xk0-TX-en1"/>
+                            <constraint firstItem="bvy-uR-hXt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="YGH-OY-5d6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpi-Is-WUN" secondAttribute="trailing" constant="100" id="eEs-su-WWD"/>
+                            <constraint firstItem="QPj-cU-vSN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="589" id="hGg-pY-e2t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bvy-uR-hXt" secondAttribute="trailing" constant="225" id="j5i-gR-Tfg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jpi-Is-WUN" secondAttribute="bottom" constant="742" id="jyE-CC-HlS"/>
+                            <constraint firstItem="jpi-Is-WUN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-38" id="oXG-nl-kLN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bvy-uR-hXt" secondAttribute="bottom" constant="10.5" id="yVM-WC-vxb"/>
+                            <constraint firstItem="jpi-Is-WUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="z9y-Jh-d3x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VUl-C9-2Ae" secondAttribute="trailing" id="zTT-gM-8uD"/>
+                            <constraint firstItem="DEl-KW-rhl" firstAttribute="leading" secondItem="QPj-cU-vSN" secondAttribute="trailing" constant="92" id="zV6-BP-Ayf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -32,4 +89,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="title" width="611" height="138"/>
+    </resources>
 </document>
