@@ -42,21 +42,6 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="9"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VUl-C9-2Ae" userLabel="acrossTextView">
-                                <rect key="frame" x="217" y="692.5" width="197" height="158.5"/>
-                                <string key="text">1. Create a whole town with gibberish talking animals.       Animal ________
- 
-2. Creatures that you catch and train to battle others.
- 
-3. A digger who blows up monsters with air
- 
-4. Hedgehog that collects rings and runs at the speed of light
- 
-5. Pink puff ball that devours everything</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="9"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="jpi-Is-WUN">
                                 <rect key="frame" x="101" y="6" width="213" height="114"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -204,6 +189,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" placeholder=" " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGD-9m-mSl" userLabel="hyphen">
                                 <rect key="frame" x="121" y="294" width="25" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -399,30 +388,118 @@
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4w-Oq-cmp">
+                                <rect key="frame" x="63" y="471" width="91" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17344063520431519" green="0.93113487958908081" blue="0.65129512548446655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="11"/>
+                                <state key="normal" title="Submit Answers">
+                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3Q-QM-ViF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sJB-5g-d9V" userLabel="acrossTextView">
+                                <rect key="frame" x="227" y="688" width="197" height="175"/>
+                                <string key="text">1. Create a whole town with gibberish talking animals.       Animal ________
+ 
+2. Creatures that you catch and train to battle others.
+ 
+3. A digger who blows up monsters with air
+ 
+4. Hedgehog that collects rings and runs at the speed of light
+ 
+5. Pink puff ball that devours everything</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="9"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.89229106903076172" green="0.9538610577583313" blue="0.97384792566299438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QPj-cU-vSN" secondAttribute="trailing" constant="272" id="CcI-wD-FRc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VUl-C9-2Ae" secondAttribute="bottom" constant="11" id="EGL-vz-rYH"/>
                             <constraint firstItem="DEl-KW-rhl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="589" id="QSK-t4-cLL"/>
-                            <constraint firstItem="VUl-C9-2Ae" firstAttribute="leading" secondItem="bvy-uR-hXt" secondAttribute="trailing" constant="28" id="RFh-Gy-ize"/>
-                            <constraint firstItem="VUl-C9-2Ae" firstAttribute="top" secondItem="DEl-KW-rhl" secondAttribute="bottom" constant="15" id="XII-Ml-1Ve"/>
+                            <constraint firstItem="sJB-5g-d9V" firstAttribute="leading" secondItem="bvy-uR-hXt" secondAttribute="trailing" constant="38" id="WPm-hm-lEP"/>
                             <constraint firstItem="bvy-uR-hXt" firstAttribute="top" secondItem="QPj-cU-vSN" secondAttribute="bottom" constant="15" id="Xk0-TX-en1"/>
                             <constraint firstItem="bvy-uR-hXt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="YGH-OY-5d6"/>
+                            <constraint firstItem="sJB-5g-d9V" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="1" id="cqI-Kf-isQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpi-Is-WUN" secondAttribute="trailing" constant="100" id="eEs-su-WWD"/>
+                            <constraint firstItem="sJB-5g-d9V" firstAttribute="top" secondItem="DEl-KW-rhl" secondAttribute="bottom" constant="10.5" id="gDA-SZ-hh2"/>
+                            <constraint firstItem="sJB-5g-d9V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="h5n-o2-R7o"/>
                             <constraint firstItem="QPj-cU-vSN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="589" id="hGg-pY-e2t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bvy-uR-hXt" secondAttribute="trailing" constant="225" id="j5i-gR-Tfg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jpi-Is-WUN" secondAttribute="bottom" constant="742" id="jyE-CC-HlS"/>
                             <constraint firstItem="jpi-Is-WUN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-38" id="oXG-nl-kLN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bvy-uR-hXt" secondAttribute="bottom" constant="10.5" id="yVM-WC-vxb"/>
                             <constraint firstItem="jpi-Is-WUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="z9y-Jh-d3x"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VUl-C9-2Ae" secondAttribute="trailing" id="zTT-gM-8uD"/>
                             <constraint firstItem="DEl-KW-rhl" firstAttribute="leading" secondItem="QPj-cU-vSN" secondAttribute="trailing" constant="92" id="zV6-BP-Ayf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="IWE-ol-AFn" appends="YES" id="Tpe-2R-6gg"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="Crossing_TF" destination="3Jf-sd-LcG" id="y3n-RL-UmY"/>
+                        <outlet property="Doom_TF" destination="AB6-dw-7V9" id="CX0-7M-33q"/>
+                        <outlet property="Pac_Pok_TF" destination="kJ6-ci-mQG" id="heM-uU-vz8"/>
+                        <outlet property="Sonic_TF" destination="Raq-Pj-VbE" id="LN3-7O-qpm"/>
+                        <outlet property="ZeldaTF" destination="2jx-hn-YXe" id="BPC-ic-PL9"/>
+                        <outlet property="cRossing_TF" destination="tlY-4a-QQs" id="vkG-p0-4kH"/>
+                        <outlet property="croSsing_TF" destination="2nj-1H-7XY" id="Soi-Wz-rJO"/>
+                        <outlet property="crosSing_TF" destination="vaT-kw-HJ1" id="egi-es-y20"/>
+                        <outlet property="crossIng_TF" destination="mmf-kZ-ciw" id="8LJ-xC-MLr"/>
+                        <outlet property="crossiNg_TF" destination="fEU-Ng-d9E" id="lUt-vi-Jyf"/>
+                        <outlet property="crossinG_Gal_TF" destination="VZd-Tz-pak" id="DiS-fk-jV5"/>
+                        <outlet property="dIgdug_TF" destination="LSO-CZ-DOY" id="jBk-ls-X4M"/>
+                        <outlet property="dOom_crOs_TF" destination="5Qs-il-Bo8" id="8lc-nI-fHM"/>
+                        <outlet property="diGdug_TF" destination="gUB-dr-CCl" id="Vod-w2-TlQ"/>
+                        <outlet property="digDug_TF" destination="dBi-JE-U0X" id="wXE-Su-dzF"/>
+                        <outlet property="digdUg_TF" destination="6wD-RS-O84" id="NgJ-DZ-TxE"/>
+                        <outlet property="digduG_TF" destination="ik6-ER-tch" id="lDc-Uw-f8v"/>
+                        <outlet property="doOm_TF" destination="mug-7u-iox" id="Yhr-wm-TTA"/>
+                        <outlet property="dooM_pokeMon_TF" destination="IY5-vC-E8f" id="Dbv-eW-30z"/>
+                        <outlet property="gAlaxy_TF" destination="SaX-Fk-8mb" id="nvq-fS-tEm"/>
+                        <outlet property="gaLaxy_TF" destination="PAd-gv-5aD" id="a0j-9d-VuS"/>
+                        <outlet property="galAxy_TF" destination="lZC-uc-A0v" id="iDl-Dm-K0t"/>
+                        <outlet property="galaXy_TF" destination="sif-4k-pPk" id="F0g-Qv-2LX"/>
+                        <outlet property="galaxY_TF" destination="Zcg-a4-pQ9" id="2iu-Yx-ncv"/>
+                        <outlet property="kIrby_TF" destination="yfb-Lg-g85" id="Xha-03-vDj"/>
+                        <outlet property="kiRby_TF" destination="zIB-82-yrl" id="rPC-1a-es4"/>
+                        <outlet property="kirBy_TF" destination="2lQ-5k-Kbe" id="Sir-hU-E4P"/>
+                        <outlet property="kirbY_TF" destination="eoc-O4-I8M" id="zDT-Ft-5c5"/>
+                        <outlet property="oVercooked_TF" destination="IXg-YW-kPg" id="J1D-3T-KR2"/>
+                        <outlet property="ovErcooked_TF" destination="r0M-KB-2mU" id="qtW-hc-Y0t"/>
+                        <outlet property="oveRcooked_TF" destination="cLB-zv-D88" id="us3-05-G4i"/>
+                        <outlet property="overCooked_TF" destination="B5T-fb-mRl" id="ETR-Be-E0B"/>
+                        <outlet property="overcOoked_TF" destination="icW-Tp-YMl" id="JgI-88-FyH"/>
+                        <outlet property="overcoOked_TF" destination="A34-dq-Elu" id="EPw-G8-RLJ"/>
+                        <outlet property="overcooKed_Kir_TF" destination="oyy-sK-55F" id="yPh-CN-pfj"/>
+                        <outlet property="overcookEd_TF" destination="k0b-Ya-xD6" id="3K2-7y-cn9"/>
+                        <outlet property="overcookeD_TF" destination="sxq-WK-jYS" id="j2H-s9-ir8"/>
+                        <outlet property="pAcmanTF" destination="Mro-TP-RZk" id="oUh-08-TGq"/>
+                        <outlet property="pOkemon_TF" destination="qmR-Is-gg9" id="1mU-Lu-mAa"/>
+                        <outlet property="paCmanTF" destination="Nba-dR-Aee" id="b0t-zc-ZOB"/>
+                        <outlet property="pacManTF" destination="hiw-dZ-2AG" id="eOm-NL-f4L"/>
+                        <outlet property="pacmAnTF" destination="J8Z-fl-xZM" id="Gs8-nK-IbG"/>
+                        <outlet property="pacmaN_soNic_TF" destination="Msn-Dk-lNt" id="BJD-SP-kIG"/>
+                        <outlet property="poKemon_TF" destination="L8g-64-0ac" id="2cY-Mz-HrT"/>
+                        <outlet property="pokEmon_TF" destination="bOC-oo-xfQ" id="Ovo-oj-Kv2"/>
+                        <outlet property="pokemOn_Over_TF" destination="NZR-B2-h5m" id="oVC-Rg-cHt"/>
+                        <outlet property="pokemoN_TF" destination="40p-kK-gdm" id="ZPh-0f-plB"/>
+                        <outlet property="sOnic_TF" destination="KDA-Y0-aPk" id="zYZ-Ns-0aO"/>
+                        <outlet property="sonIc_TF" destination="OLP-u5-dg8" id="uap-Sn-I7C"/>
+                        <outlet property="soniC_TF" destination="n2Y-Z4-bjh" id="L83-wo-URr"/>
+                        <outlet property="zEldaTF" destination="hRn-Zz-s67" id="CGa-fi-E0a"/>
+                        <outlet property="zeLdaTF" destination="ySu-7b-dip" id="s3o-u3-p0X"/>
+                        <outlet property="zelDa_Dig_TF" destination="Ugn-JQ-QAn" id="SP9-bn-Nr8"/>
+                        <outlet property="zeldATF" destination="YtG-ud-PA6" id="mAk-zy-6t3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="IWE-ol-AFn"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
